@@ -41,5 +41,8 @@ if (isset($_POST["submit"])) {
 
     <h2>Hasil</h2>
     <p>Judul Buku: <?php echo $IsiJudul; ?></p>
+    <p>Penulis: <?php echo $IsiPenulis; ?></p>
+    <p>Penerbit: <?php echo $IsiPenerbit; ?></p>
+    <p>Harga: <?php echo $IsiHarga; ?></p>
 </body>
 </html>
