@@ -1,6 +1,5 @@
-<!-- Constructor -->
-
 <?php 
+// <!-- Constructor -->
 
 Class Produk{
     public  $judul,
@@ -8,7 +7,7 @@ Class Produk{
             $penerbit,
             $harga;
 
-    public function __constract($isiJudul, $isiPenulis, $isiPenerbit, $isiHarga){
+    public function __construct($isiJudul, $isiPenulis, $isiPenerbit, $isiHarga){
         $this->judul = $isiJudul;
         $this->penulis = $isiPenulis;
         $this->penerbit = $isiPenerbit;
@@ -16,12 +15,12 @@ Class Produk{
     }
     
     public function getLabel(){
-        return "$this->judul, $this->penulis";
+        return "$this->judul, $this->penerbit";
     }
 }
 
 
-$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000);
+$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen jol", 30000);
 $produk2 = new Produk("Uncharted", "Neil Druckman", "Sony Computer", 250000);
  
 echo "Komik: ".$produk1->getLabel();
