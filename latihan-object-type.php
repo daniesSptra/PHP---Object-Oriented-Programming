@@ -28,7 +28,7 @@ Class Dokumen{
 }
 
 Class CetakDetailData{
-    public function cetakSemua($dokumen){
+    public function cetakSemua(Dokumen $dokumen){
         $semuaData = "{$dokumen->cetakData()} | {$dokumen->format_dokumen} | {$dokumen->bagian} | {$dokumen->waktu_perbarui}";
         return $semuaData;
     }
